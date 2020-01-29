@@ -1,0 +1,106 @@
+*{
+	box-sizing: border-box;
+}
+@media screen and (max-width:500px)
+{
+	#menubar, #main{
+		width:100%;
+	}
+}
+.container
+{
+	width: 1100px;
+	height: auto;
+	padding: 10px;
+}
+
+#top h1
+{
+	background-color:  #5aad5a; /*#5aad5a*/
+	color: white;
+	text-align: left;
+	padding: 25px;
+	
+}
+#top .welcome, #main, .menuitem, #bottom{
+	font-family: 'Arial', sans-serif
+}
+
+.wrapper
+{
+	height: 200px;
+}
+#menubar
+{
+	height: 200px;
+	width: 250px;
+}
+
+#menulist
+{
+	padding-left: 0px;
+	padding-top: 10px;
+}
+#menulist .menuitem
+{
+	height: 25px;
+	width:  200px;
+	border: 0.5px solid grey;
+	list-style: none;
+	border-radius: 4px;
+	background-color: #d9d9d9;
+	margin-bottom: 1px;
+	padding: 5px;
+}
+
+#menulist .selected
+{
+ background-color: #5aad5a;
+}
+#main, .menuitem, .colorbuttons,#bottom
+{
+	font-size: 13px;
+}
+#main
+{
+	max-width: 80%;
+	position: relative;
+	left:  220px;
+	padding-top: 35px;
+	bottom: 250px;
+}
+#main p{
+	font-size: 0.7vw;
+	padding-right: px;
+}
+.colorbuttons
+{
+	text-decoration: none;
+	margin: auto;
+	padding: 2px;
+	color: white;
+}
+#greenbutton
+{
+	background-color: green;
+}
+#orangebutton
+{
+	background-color: orange;
+}
+#bluebutton
+{
+	background-color: blue;
+}
+#redbutton
+{
+	background-color: red;
+}
+#bottom
+{
+	background-color: #e6e6e6;
+	padding: 20px;
+	border-radius: 3px;
+	text-align: center;
+
+}
