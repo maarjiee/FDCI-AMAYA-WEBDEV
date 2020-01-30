@@ -1,22 +1,19 @@
-*{
-	box-sizing: border-box;
-}
-@media screen and (max-width:500px)
-{
-	#menubar, #main{
-		width:100%;
-	}
+@media screen and (max-width: 800px) {
+  #menubar, #main, #bottom, .wrapper {
+    width: 100%;
+  }
+  #menulist,  #main {
+  	overflow: hidden;
+  } 
 }
 .container
 {
-	width: 1100px;
-	height: auto;
-	padding: 10px;
+	width: 60%;
+	height: 100%;
 }
-
 #top h1
 {
-	background-color:  #5aad5a; /*#5aad5a*/
+	background-color:  #5aad5a;
 	color: white;
 	text-align: left;
 	padding: 25px;
@@ -26,25 +23,22 @@
 	font-family: 'Arial', sans-serif
 }
 
-.wrapper
-{
-	height: 200px;
-}
 #menubar
 {
-	height: 200px;
-	width: 250px;
+	width: 25%;
+	float: left;
+	margin-top: -6px;
 }
 
 #menulist
 {
 	padding-left: 0px;
-	padding-top: 10px;
+	
+
 }
 #menulist .menuitem
 {
-	height: 25px;
-	width:  200px;
+	width:  80%;
 	border: 0.5px solid grey;
 	list-style: none;
 	border-radius: 4px;
@@ -59,19 +53,15 @@
 }
 #main, .menuitem, .colorbuttons,#bottom
 {
-	font-size: 13px;
+	font-size: 15px;
 }
 #main
 {
-	max-width: 80%;
-	position: relative;
-	left:  220px;
-	padding-top: 35px;
-	bottom: 250px;
+	max-width: 95%;
+	max-height:  95%;
 }
 #main p{
-	font-size: 0.7vw;
-	padding-right: px;
+	font-size: 12px;
 }
 .colorbuttons
 {
@@ -102,5 +92,4 @@
 	padding: 20px;
 	border-radius: 3px;
 	text-align: center;
-
 }
