@@ -1222,7 +1222,7 @@ h2,
 .h2,
 h3,
 .h3 {
-  margin-top: 20px;
+  margin-top: -26px;
   margin-bottom: 10px;
 }
 h1 small,
@@ -5032,7 +5032,7 @@ a.badge:focus {
   margin-left: 3px;
 }
 .jumbotron {
-  padding-top: 30px;
+  padding-top: 50px;
   padding-bottom: 30px;
   margin-bottom: 30px;
   color: inherit;
@@ -5061,8 +5061,8 @@ a.badge:focus {
 }
 @media screen and (min-width: 768px) {
   .jumbotron {
-    padding-top: 48px;
-    padding-bottom: 48px;
+   /* padding-top: 48px;
+    padding-bottom: 48px;*/
   }
   .container .jumbotron,
   .container-fluid .jumbotron {
