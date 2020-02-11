@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>JS_Activity Part2</title>
+</head>
+<body>
+    <script>
+        var listOfGrades = [100,99,98,80,70];
+        var sum = 0;
+        var average;
+
+        for(var i = 0 ; i < listOfGrades.length ; i++){
+            sum = sum + listOfGrades[i];
+        }
+            average = sum / listOfGrades.length;
+            
+            switch(average!=0){
+                case average < 60 :
+                    document.write("F");
+                break;
+                case average < 70 :
+                    document.write("D");
+                break;
+                case average < 80 :
+                    document.write("C");
+                break;
+                case average < 90 :
+                    document.write("B");
+                break;
+                case average < 100 :
+                    document.write("A");
+                break;
+                default : 
+                     document.write("See you next year in the same class! Please try harder!");              
+            }
+    </script>
+
+</body>
+</html>
