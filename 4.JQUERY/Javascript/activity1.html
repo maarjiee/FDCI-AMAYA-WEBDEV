@@ -34,11 +34,11 @@
             </tr>
         </table> <br>
         <form id="myForm" action="/">
-            PE: <input type="number" id="pe" value=""><br>
-            MATH: <input type="number" id="math" value=""><br>
-            SCIENCE: <input type="number" id="science" value=""><br>
-            ENGLISH: <input type="number" id="eng" value=""><br>
-            FILIPINO: <input type="number" id="fil" value=""><br>
+            PE: <input type="number" id="pe" value="" max="100" min="1"><br>
+            MATH: <input type="number" id="math" value=""  max="100" min="1"><br>
+            SCIENCE: <input type="number" id="science" value=""  max="100" min="1"><br>
+            ENGLISH: <input type="number" id="eng" value=""  max="100" min="1"><br>
+            FILIPINO: <input type="number" id="fil" value=""  max="100" min="1"><br>
         </form>
         <button onclick="getGradeEquivalent()">Grade </button>
         <p id="gradeList"></p>
@@ -51,6 +51,6 @@
 		<button onclick="doBonus()">BONUS </button>
 		<p id="bonus"></p>
 
-        <script type="text/javascript" src="Javascript/js/activity1.js"></script>
+        <script type="text/javascript" src="js/activity1.js"></script>
 </body>
-</html>s
+</html>
