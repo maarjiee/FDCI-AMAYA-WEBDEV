@@ -12,10 +12,30 @@ function getGradeEquivalent(){
 
     var  listOfGrades = [];
     var pe =  parseInt(document.getElementById('pe').value);
+    if (pe < 1 || pe > 100) {
+        alert('Please input GRADE 1-100');
+        return;
+    }
     var math = parseInt(document.getElementById('math').value);
+    if (math < 1 || math > 100) {
+          alert('Please input GRADE 1-100');
+        return;
+    }
     var sci = parseInt(document.getElementById('science').value);
+     if (sci < 1 || sci > 100) {
+          alert('Please input GRADE 1-100');
+        return;
+    }
     var english = parseInt(document.getElementById('eng').value);
+    if (english < 1 || english > 100) {
+          alert('Please input GRADE 1-100');
+        return;
+    }
     var fil = parseInt(document.getElementById('fil').value);
+      if (fil < 1 || fil > 100 ) {
+          alert('Please input GRADE 1-100');
+        return;
+    }
    
 
     listOfGrades.push(pe);
@@ -50,8 +70,9 @@ function getGradeEquivalent(){
             document.getElementById("equival").innerHTML= "Average: "+ average +"<br> A";
         break;
         default : 
-            document.getElementById("equival").innerHTML = "Average: "+ average +": See you next year in the same class! Please try harder!";              
+            alert('INVALID ! Please input GRADES!');          
     }
+
 }
 
 function doBeepBoop(){
