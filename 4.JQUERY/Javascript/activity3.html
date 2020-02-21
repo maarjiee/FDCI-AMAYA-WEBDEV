@@ -6,32 +6,35 @@
 </head>
 <body>
 	<h3>PART 1</h3>
-	<form  id="form1" onsubmit="addInfo(); return false;">
+	<form  id="form1">
 		<label>NAME: </label>
 		<input type="text" id="name" name="name" placeholder="Input name" > <br>
 		<label>AGE: </label>
 		<input type="number" name="age" id="age" min="1" placeholder="Input age" >
-		<button type="submit"  >ADD</button>
+		<button id="addPerson">ADD</button>
 		<h4>READABLE FORMAT</h4>
 		<p id="final"></p>
 		<p id="readable"></p>
 		
+		
 	</form>
 
 	<h3>PART 2</h3>
-	<form  id="form2" onsubmit="addProduct(); return false;">
+	<form  id="form2" onsubmit="addProduct(); return false; ">
 		<label>NAME: </label>
-		<input type="text" id="pname" name="name" placeholder="max of 64 characters"><br>
+		<input type="text" id="pname" name="name" placeholder="max of 64 characters" ><br>
 		<label>STOCK: </label>
-		<input type="text" id="stock" name="stock" placeholder="Input number of stocks" step="any"><br>
+		<input type="number" id="stock" name="stock" min="1" placeholder="Input number of stocks" step="any" ><br>
 		<label>PRICE : </label>
 		<input type="text" id="price" name="price" placeholder="Input price" step="any" >
-		<button type="submit">ADD TO LIST</button>
-		<input type="button"  onclick="totalVal(); return false;" value="TOTAL">
+		<button  id="btn1" >ADD TO LIST</button>
+		<input type="button" id="btn2" onclick="totalVal()"  value="TOTAL">
 		<p id="prodDisplay"></p>
 		<p id="total"></p>
-		<p id="totalVal"></p>
+		<p id="totalVal"> </p>
+
 	</form>
+	
 
 	  <script type="text/javascript" src="js/activity3.js"></script>
 </body>
