@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>JS_ATIVITY 4</title>
+	<link rel="stylesheet" type="text/css" href="../../3.CSS/assets/css/bootstrap.min.css">
+
+</head>
+<body > <!--  onload="setGenderDefault()-->
+
+		<h3>Profile</h3>
+		<form>
+			<label>What's your name?</label><br>
+			<input type="text" id="name" name="name"><br>
+			<label>Gender</label><br>
+			<select  id="gender" onchange="getSelectedGender()">
+			 	<option value="Female">Female</option>
+			 	<option value="Male">Male</option>
+			 	<option value="Others">Others</option>
+			</select><br>
+		<div id="addHobby"> <label> Hobbies</label><br>
+			<small>Select at least 3</small><br>
+			<input type="checkbox"><label for="Singing" class="hobby">Singing</label><br>
+			<input type="checkbox">
+			<label for="Dancing" class="hobby">Dancing</label><br>
+			<input type="checkbox" >
+			<label for="Traveling" class="hobby"> Traveling</label><br>
+			<input type="checkbox">
+			<label  for="Testing" class="hobby"> Testing</label><br>
+			<label typ ></label>
+			<input type="button" id="btnHobby" value="Add Hobby" onclick="addHobby()"><br>
+		</div>
+			<label>Tell me a little thing about yourself</label><br>
+			<textarea rows="10">
+			</textarea> <br>
+			<input type="submit">
+		</form>
+
+
+	<script type="text/javascript" src="js/activity4.js"></script>
+</body>
+</html>
